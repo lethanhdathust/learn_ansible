@@ -1,0 +1,13 @@
+# root@10.10.10.109
+[win]
+10.10.10.112
+
+[win:vars]
+ansible_user=ansible
+ansible_password=ansible
+ansible_port=5986
+#ansible_host=DESKTOP-POR5A8C
+ansible_winrm_transport=ntlm
+ansible_connection=winrm
+ansible_winrm_transport=basic
+ansible_winrm_server_cert_validation=ignore

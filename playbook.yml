@@ -1,0 +1,15 @@
+---
+- name: Copy and run Python file on Windows
+  hosts: win
+  tasks:
+    - name: Copy Python file to Windows machine
+      win_copy:
+        src: /root/ansible/get_link   # Local path to Python file on Ansible control machine
+        dest: C:\Users\Admin\Documents\  # Destination path on Windows machine
+    - name: Ensure the data_input directory exists
+      win_file:
+        path: C:\Users\Admin\Documents\get_link\data_input
+        state: directory
+    - name: Run Python script
+      win_shell: |
+        python3 C:\Users\Admin\Documents\get_link\get_link_mst.py

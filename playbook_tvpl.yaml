@@ -1,0 +1,33 @@
+- name: crawl data mst in thu vien phap luat
+  hosts: win
+  tasks:
+    - name: copy file code to windows
+      win_copy: 
+        src: /root/ansible/crawling_thuvienphapluat
+        dest: C:\Users\Admin\Documents\
+    # - name: run code
+      # win_shell: |
+        # python3 C:\Users\Admin\Documents\crawling_thuvienphapluat\
+    - name: Run Python script with data_input1 in parallel
+      win_shell: |
+        Start-Process python -ArgumentList "mainv3.py --input_dir=./data_input1 --output_dir=./data_output1 --log_dir=./log1.log --proxy_port=40" -NoNewWindow -PassThru
+      args:
+        chdir: C:\path\to\your\script\directory  # Set the directory where your script is located
+
+    - name: Run Python script with data_input2 in parallel
+      win_shell: |
+        Start-Process python -ArgumentList "mainv3.py --input_dir=./data_input2 --output_dir=./data_output2 --log_dir=./log2.log --proxy_port=40" -NoNewWindow -PassThru
+      args:
+        chdir: C:\path\to\your\script\directory
+
+    - name: Run Python script with data_input3 in parallel
+      win_shell: |
+        Start-Process python -ArgumentList "mainv3.py --input_dir=./data_input3 --output_dir=./data_output3 --log_dir=./log3.log --proxy_port=40" -NoNewWindow -PassThru
+      args:
+        chdir: C:\path\to\your\script\directory
+
+    - name: Run Python script with data_input4 in parallel
+      win_shell: |
+        Start-Process python -ArgumentList "mainv3.py --input_dir=./data_input4 --output_dir=./data_output4 --log_dir=./log4.log --proxy_port=40" -NoNewWindow -PassThru
+      args:
+        chdir: C:\path\to\your\script\directory

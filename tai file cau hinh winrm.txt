@@ -1,0 +1,11 @@
+tai file cau hinh winrm về
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ansible/ansible-documentation/ae8772176a5c645655c91328e93196bcf741732d/examples/scripts/ConfigureRemotingForAnsible.ps1" -OutFile "ConfigureRemotingForAnsible.ps1"
+
+Step 1: Check the Current Execution Policy
+Get-ExecutionPolicy
+Step 2: Set the Execution Policy to Allow Scripts
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+cài đặt
+powershell.exe -File ConfigureRemotingForAnsible.ps1
+
+
