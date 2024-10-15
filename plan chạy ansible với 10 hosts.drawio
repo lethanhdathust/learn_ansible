@@ -1,9 +1,32 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="3fT9tLr-qp50FnoSMfHa">
-    <mxGraphModel>
+    <mxGraphModel dx="1035" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="u9udJjWMyJ9ZvSA9LecI-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="u9udJjWMyJ9ZvSA9LecI-2" target="u9udJjWMyJ9ZvSA9LecI-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u9udJjWMyJ9ZvSA9LecI-2" value="máy ansible" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="u9udJjWMyJ9ZvSA9LecI-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="u9udJjWMyJ9ZvSA9LecI-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="89.70588235294122" y="319.9999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u9udJjWMyJ9ZvSA9LecI-3" value="chứa 10 folder" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="180" width="60" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="u9udJjWMyJ9ZvSA9LecI-5" value="copt từng folder vào từng máy , máy 113 sẽ chỉ hứ folder 113 data" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="15" y="340" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="u9udJjWMyJ9ZvSA9LecI-10" value="Folder data lớn chứa số folder con = số process, c" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="200" width="230" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="u9udJjWMyJ9ZvSA9LecI-11" value="thống nhất file input đầu vaò" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
